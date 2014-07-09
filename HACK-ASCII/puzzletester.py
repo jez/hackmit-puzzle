@@ -12,7 +12,8 @@ def checkSingleLine(puzzle, puzzleID, hashedID):
 
 def checkPairedLines(puzzle, puzzleID, hashedID):
   for i in range(len(puzzle) - 2):
-    addedLines = hex(int(puzzle[i], 16) + int(puzzle[2], 16))[-57:-1]
+    # Add the lines as if they were numbers
+    addedLines = hex(int(puzzle[i], 16) + int(puzzle[i + 2], 16))[-57:-1]
     if hashedID == addedLines:
       return i + 1
 
