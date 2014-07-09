@@ -6,3 +6,8 @@ Currently, you can check out the [HACK-ASCII](/HACK-ASCII) directory to
 try and figure out what all these lines of random hex data mean. I've 
 made a few tests to try different things, and the format of them should
 become pretty apparent. I tried to write some doc strings.
+
+## Usage
+
+To run the tests for HACK-ASCII, once you've cloned the repo, cd into 
+HACK-ASCII and run `./puzzletester.py`. That's it.
